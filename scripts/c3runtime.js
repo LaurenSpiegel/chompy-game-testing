@@ -4301,19 +4301,23 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg,
 		C3.Plugins.Text,
 		C3.Behaviors.Fade,
+		C3.Plugins.Sprite.Cnds.OnCreated,
+		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Behaviors.Fade.Acts.StartFade,
+		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.Sprite.Cnds.OnAnyAnimFinished,
 		C3.Plugins.Audio.Acts.Stop,
-		C3.Plugins.Sprite.Cnds.OnCreated,
-		C3.Plugins.Sprite.Acts.StopAnim,
 		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Text.Acts.SetText
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Touch.Cnds.IsTouchingObject
 	];
 };
 self.C3_JsPropNameTable = [
+	{feedable: 0},
 	{dog: 0},
 	{Mouse: 0},
 	{Touch: 0},
